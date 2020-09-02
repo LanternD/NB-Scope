@@ -1,0 +1,8 @@
+### Module positions - created on Fri Mar  6 00:26:25 2020 ###
+### Printed by Pcbnew version 5.99.0-unknown-ca1ab0a~100~ubuntu19.10.1
+## Unit = inches, Angle = deg.
+## Side : bottom
+# Ref     Val       Package                PosX       PosY       Rot  Side
+G***      LOGO      Cat-Logo            -3.6772    -3.4252   90.0000  bottom
+T1        M_ADC     test_pad            -5.4685    -2.9606    0.0000  bottom
+## End

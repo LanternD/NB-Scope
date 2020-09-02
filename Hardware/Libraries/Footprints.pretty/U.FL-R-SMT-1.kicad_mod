@@ -1,0 +1,16 @@
+(module "U.FL-R-SMT-1" (layer F.Cu) (tedit 5B9D2A76)
+  (fp_text reference "U.FL-R-SMT-1" (at 0 4.2) (layer F.SilkS) hide
+    (effects (font (size 1 1) (thickness 0.15)))
+  )
+  (fp_text value "U.FL-R-SMT-1" (at 0 2.95) (layer F.Fab) hide
+    (effects (font (size 1 1) (thickness 0.15)))
+  )
+  (fp_circle (center 0 0) (end 0.4 0.4) (layer F.SilkS) (width 0.15))
+  (fp_line (start 1.5 1.5) (end 1.5 -1.5) (layer F.SilkS) (width 0.15))
+  (fp_line (start -1.5 1.5) (end 1.5 1.5) (layer F.SilkS) (width 0.15))
+  (fp_line (start -1.5 -1.5) (end -1.5 1.5) (layer F.SilkS) (width 0.15))
+  (fp_line (start -1.5 -1.5) (end 1.5 -1.5) (layer F.SilkS) (width 0.15))
+  (pad "3" smd rect (at 0 1.525) (size 1 1.05) (layers "F.Cu" "F.Paste" "F.Mask") (tstamp e7a7f739-c845-4b97-ab4c-b8bd9ee8962a))
+  (pad "2" smd rect (at 1.475 0) (size 1.05 2.2) (layers "F.Cu" "F.Paste" "F.Mask") (tstamp b30b263a-af0d-498d-a0ae-ca88e79ab8b7))
+  (pad "1" smd rect (at -1.475 0) (size 1.05 2.2) (layers "F.Cu" "F.Paste" "F.Mask") (tstamp 078fe05d-a07f-43d8-a595-1db1eb26da2a))
+)

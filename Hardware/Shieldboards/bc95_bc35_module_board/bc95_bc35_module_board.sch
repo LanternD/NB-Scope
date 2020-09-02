@@ -1,0 +1,570 @@
+EESchema Schematic File Version 5
+EELAYER 34 0
+EELAYER END
+$Descr A4 11693 8268
+encoding utf-8
+Sheet 1 1
+Title ""
+Date ""
+Rev ""
+Comp ""
+Comment1 ""
+Comment2 ""
+Comment3 ""
+Comment4 ""
+Comment5 ""
+Comment6 ""
+Comment7 ""
+Comment8 ""
+Comment9 ""
+$EndDescr
+Connection ~ 8350 1800
+Connection ~ 9575 3900
+Connection ~ 9575 3700
+Connection ~ 9575 3800
+Connection ~ 8450 5550
+Connection ~ 9150 5250
+Connection ~ 3850 3650
+Connection ~ 3650 1750
+Connection ~ 6425 1925
+Connection ~ 6150 2750
+Connection ~ 6325 2750
+Connection ~ 6000 2750
+Connection ~ 6000 2375
+Connection ~ 5500 2375
+Wire Wire Line
+	2375 2475 3050 2475
+Wire Wire Line
+	2375 2875 3050 2875
+Wire Wire Line
+	2375 3275 3050 3275
+Wire Wire Line
+	3050 2275 2375 2275
+Wire Wire Line
+	3050 2575 2375 2575
+Wire Wire Line
+	3050 2775 2375 2775
+Wire Wire Line
+	3050 3075 2375 3075
+Wire Wire Line
+	3650 1675 3650 1750
+Wire Wire Line
+	3650 1750 3650 1875
+Wire Wire Line
+	3750 1750 3650 1750
+Wire Wire Line
+	3750 1875 3750 1750
+Wire Wire Line
+	3850 3650 3850 3575
+Wire Wire Line
+	3850 3725 3850 3650
+Wire Wire Line
+	3950 1600 3950 1875
+Wire Wire Line
+	3950 3575 3950 3650
+Wire Wire Line
+	3950 3650 3850 3650
+Wire Wire Line
+	4650 2375 5500 2375
+Wire Wire Line
+	4650 2575 4725 2575
+Wire Wire Line
+	4650 2775 4725 2775
+Wire Wire Line
+	4650 2975 4725 2975
+Wire Wire Line
+	4725 2675 4650 2675
+Wire Wire Line
+	4725 2875 4650 2875
+Wire Wire Line
+	4725 3275 4650 3275
+Wire Wire Line
+	5500 2375 5600 2375
+Wire Wire Line
+	5500 2475 5500 2375
+Wire Wire Line
+	5500 2675 5500 2750
+Wire Wire Line
+	5500 2750 6000 2750
+Wire Wire Line
+	6000 2375 5900 2375
+Wire Wire Line
+	6000 2475 6000 2375
+Wire Wire Line
+	6000 2675 6000 2750
+Wire Wire Line
+	6000 2750 6150 2750
+Wire Wire Line
+	6125 2375 6000 2375
+Wire Wire Line
+	6150 2750 6150 2900
+Wire Wire Line
+	6325 1925 6425 1925
+Wire Wire Line
+	6325 2075 6325 1925
+Wire Wire Line
+	6325 2675 6325 2750
+Wire Wire Line
+	6325 2750 6150 2750
+Wire Wire Line
+	6525 1925 6425 1925
+Wire Wire Line
+	6525 2075 6525 1925
+Wire Wire Line
+	6525 2675 6525 2750
+Wire Wire Line
+	6525 2750 6325 2750
+Wire Wire Line
+	7950 1800 8350 1800
+Wire Wire Line
+	7950 2000 8850 2000
+Wire Wire Line
+	7950 2200 8850 2200
+Wire Wire Line
+	7950 2400 8850 2400
+Wire Wire Line
+	7950 2600 8850 2600
+Wire Wire Line
+	7950 2800 8850 2800
+Wire Wire Line
+	7950 3000 8850 3000
+Wire Wire Line
+	7950 3200 8850 3200
+Wire Wire Line
+	7950 3400 8850 3400
+Wire Wire Line
+	7950 3600 8850 3600
+Wire Wire Line
+	7950 3800 8850 3800
+Wire Wire Line
+	8350 1675 8350 1800
+Wire Wire Line
+	8350 1800 8850 1800
+Wire Wire Line
+	8450 5250 8450 5550
+Wire Wire Line
+	8450 5550 8450 5650
+Wire Wire Line
+	8600 5250 8450 5250
+Wire Wire Line
+	8700 5550 8450 5550
+Wire Wire Line
+	8850 1900 7950 1900
+Wire Wire Line
+	8850 2100 7950 2100
+Wire Wire Line
+	8850 2300 7950 2300
+Wire Wire Line
+	8850 2500 7950 2500
+Wire Wire Line
+	8850 2700 7950 2700
+Wire Wire Line
+	8850 2900 7950 2900
+Wire Wire Line
+	8850 3100 7950 3100
+Wire Wire Line
+	8850 3300 7950 3300
+Wire Wire Line
+	8850 3500 7950 3500
+Wire Wire Line
+	8850 3700 7950 3700
+Wire Wire Line
+	8850 3900 7950 3900
+Wire Wire Line
+	8900 5550 9150 5550
+Wire Wire Line
+	9150 4900 9150 5250
+Wire Wire Line
+	9150 5250 9000 5250
+Wire Wire Line
+	9150 5250 9750 5250
+Wire Wire Line
+	9150 5550 9150 5250
+Wire Wire Line
+	9300 4900 9150 4900
+Wire Wire Line
+	9575 3600 9575 3700
+Wire Wire Line
+	9575 3600 10375 3600
+Wire Wire Line
+	9575 3700 9575 3800
+Wire Wire Line
+	9575 3700 10375 3700
+Wire Wire Line
+	9575 3800 9575 3900
+Wire Wire Line
+	9575 3800 10375 3800
+Wire Wire Line
+	9575 3900 9575 4050
+Wire Wire Line
+	9575 3900 10375 3900
+Wire Wire Line
+	9675 1800 10375 1800
+Wire Wire Line
+	9675 2000 10375 2000
+Wire Wire Line
+	9675 2200 10375 2200
+Wire Wire Line
+	9675 2400 10375 2400
+Wire Wire Line
+	9675 2700 10375 2700
+Wire Wire Line
+	9675 2800 10375 2800
+Wire Wire Line
+	9675 3100 10375 3100
+Wire Wire Line
+	9675 3300 10375 3300
+Wire Wire Line
+	9675 3500 10375 3500
+Wire Wire Line
+	9750 4900 9600 4900
+Wire Wire Line
+	10375 1900 9675 1900
+Wire Wire Line
+	10375 2100 9675 2100
+Wire Wire Line
+	10375 2300 9675 2300
+Wire Wire Line
+	10375 2500 9675 2500
+Wire Wire Line
+	10375 2600 9675 2600
+Wire Wire Line
+	10375 2900 9675 2900
+Wire Wire Line
+	10375 3000 9675 3000
+Wire Wire Line
+	10375 3200 9675 3200
+Wire Wire Line
+	10375 3400 9675 3400
+Wire Notes Line
+	8250 4550 8250 6050
+Wire Notes Line
+	8250 4550 10300 4550
+Wire Notes Line
+	8250 6050 10300 6050
+Wire Notes Line
+	10300 6050 10300 4550
+Text Notes 8000 1350 0    50   ~ 0
+Connectors to the module board
+Text Notes 8875 4050 0    50   ~ 0
+From Node Base
+Text Notes 9400 5900 0    50   ~ 0
+Reset Buttom Circuit
+Text Label 2375 2275 0    50   ~ 0
+M_RI
+Text Label 2375 2475 0    50   ~ 0
+M_MAIN_UART_Rx
+Text Label 2375 2575 0    50   ~ 0
+M_MAIN_UART_Tx
+Text Label 2375 2775 0    50   ~ 0
+M_DBG_UART_Rx
+Text Label 2375 2875 0    50   ~ 0
+M_DBG_UART_TX
+Text Label 2375 3075 0    50   ~ 0
+M_ADC
+Text Label 2375 3275 0    50   ~ 0
+M_RESET
+Text Label 3950 1600 0    50   ~ 0
+M_VDD_OUT
+Text Label 4725 2575 0    50   ~ 0
+V_SIM
+Text Label 4725 2675 0    50   ~ 0
+SIM_RST
+Text Label 4725 2775 0    50   ~ 0
+SIM_IO
+Text Label 4725 2875 0    50   ~ 0
+SIM_CLK
+Text Label 4725 2975 0    50   ~ 0
+SIM_GND
+Text Label 4725 3275 0    50   ~ 0
+M_NET_LED
+Text Label 7950 1800 0    50   ~ 0
+M_VCC
+Text Label 7950 1900 0    50   ~ 0
+M_VCC
+Text Label 7950 2000 0    50   ~ 0
+GPIO_L1
+Text Label 7950 2100 0    50   ~ 0
+PSM_IND
+Text Label 7950 2200 0    50   ~ 0
+B_SPI_MISO-I2S_RXD
+Text Label 7950 2300 0    50   ~ 0
+B_SPI_MOSI-I2S_WA
+Text Label 7950 2400 0    50   ~ 0
+B_SPI_CLK-I2S_CLK
+Text Label 7950 2500 0    50   ~ 0
+B_SPI_CS-I2S_CS
+Text Label 7950 2600 0    50   ~ 0
+GPIO_L2
+Text Label 7950 2700 0    50   ~ 0
+M_USB_VBUS
+Text Label 7950 2800 0    50   ~ 0
+M_USB_DP
+Text Label 7950 2900 0    50   ~ 0
+M_USB_DM
+Text Label 7950 3000 0    50   ~ 0
+M_ADC
+Text Label 7950 3100 0    50   ~ 0
+M_MAIN_UART_Tx
+Text Label 7950 3200 0    50   ~ 0
+M_MAIN_UART_Rx
+Text Label 7950 3300 0    50   ~ 0
+M_PWRKEY
+Text Label 7950 3400 0    50   ~ 0
+M_RESET
+Text Label 7950 3500 0    50   ~ 0
+PSM_EINT
+Text Label 7950 3600 0    50   ~ 0
+M_VDD_OUT
+Text Label 7950 3700 0    50   ~ 0
+M_AP_READY
+Text Label 7950 3800 0    50   ~ 0
+GPIO_L3
+Text Label 7950 3900 0    50   ~ 0
+GPIO_L4
+Text Label 9675 1800 0    50   ~ 0
+M_VCC
+Text Label 9675 1900 0    50   ~ 0
+M_VCC
+Text Label 9675 2000 0    50   ~ 0
+V_SIM
+Text Label 9675 2100 0    50   ~ 0
+SIM_RST
+Text Label 9675 2200 0    50   ~ 0
+SIM_IO
+Text Label 9675 2300 0    50   ~ 0
+SIM_CLK
+Text Label 9675 2400 0    50   ~ 0
+SIM_GND
+Text Label 9675 2500 0    50   ~ 0
+GPIO_R1
+Text Label 9675 2600 0    50   ~ 0
+M_SDA
+Text Label 9675 2700 0    50   ~ 0
+M_SCL
+Text Label 9675 2800 0    50   ~ 0
+M_DBG_UART_TX
+Text Label 9675 2900 0    50   ~ 0
+M_DBG_UART_Rx
+Text Label 9675 3000 0    50   ~ 0
+M_AUX_UART_Tx
+Text Label 9675 3100 0    50   ~ 0
+M_AUX_UART_Rx
+Text Label 9675 3200 0    50   ~ 0
+M_NET_LED
+Text Label 9675 3300 0    50   ~ 0
+M_RI
+Text Label 9675 3400 0    50   ~ 0
+GPIO_R2
+Text Label 9675 3500 0    50   ~ 0
+GPIO_R3
+Text Label 9675 3600 0    50   ~ 0
+M_GND
+Text Label 9675 3700 0    50   ~ 0
+M_GND
+Text Label 9675 3800 0    50   ~ 0
+M_GND
+Text Label 9675 3900 0    50   ~ 0
+M_GND
+Text Label 9750 5250 0    50   ~ 0
+M_RESET
+$Comp
+L power:+3.3V #PWR0108
+U 1 1 5DAEF026
+P 3650 1675
+F 0 "#PWR0108" H 3650 1525 50  0001 C CNN
+F 1 "+3.3V" H 3665 1848 50  0000 C CNN
+F 2 "" H 3650 1675 50  0001 C CNN
+F 3 "" H 3650 1675 50  0001 C CNN
+	1    3650 1675
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:+3.3V #PWR0103
+U 1 1 5DABC261
+P 8350 1675
+F 0 "#PWR0103" H 8350 1525 50  0001 C CNN
+F 1 "+3.3V" H 8365 1848 50  0000 C CNN
+F 2 "" H 8350 1675 50  0001 C CNN
+F 3 "" H 8350 1675 50  0001 C CNN
+	1    8350 1675
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:+3.3V #PWR0101
+U 1 1 5DABC184
+P 9750 4900
+F 0 "#PWR0101" H 9750 4750 50  0001 C CNN
+F 1 "+3.3V" H 9850 5050 50  0000 C CNN
+F 2 "" H 9750 4900 50  0001 C CNN
+F 3 "" H 9750 4900 50  0001 C CNN
+	1    9750 4900
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR0107
+U 1 1 5DAEC3A6
+P 3850 3725
+F 0 "#PWR0107" H 3850 3475 50  0001 C CNN
+F 1 "GND" H 3855 3552 50  0000 C CNN
+F 2 "" H 3850 3725 50  0001 C CNN
+F 3 "" H 3850 3725 50  0001 C CNN
+	1    3850 3725
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR0105
+U 1 1 5DA9C78F
+P 6150 2900
+F 0 "#PWR0105" H 6150 2650 50  0001 C CNN
+F 1 "GND" H 6000 2900 50  0000 C CNN
+F 2 "" H 6150 2900 50  0001 C CNN
+F 3 "" H 6150 2900 50  0001 C CNN
+	1    6150 2900
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR0106
+U 1 1 5DA9E95E
+P 6425 1925
+F 0 "#PWR0106" H 6425 1675 50  0001 C CNN
+F 1 "GND" H 6275 1925 50  0000 C CNN
+F 2 "" H 6425 1925 50  0001 C CNN
+F 3 "" H 6425 1925 50  0001 C CNN
+	1    6425 1925
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR0102
+U 1 1 5DABC251
+P 8450 5650
+F 0 "#PWR0102" H 8450 5400 50  0001 C CNN
+F 1 "GND" V 8455 5522 50  0000 R CNN
+F 2 "" H 8450 5650 50  0001 C CNN
+F 3 "" H 8450 5650 50  0001 C CNN
+	1    8450 5650
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR0104
+U 1 1 5DABC286
+P 9575 4050
+F 0 "#PWR0104" H 9575 3800 50  0001 C CNN
+F 1 "GND" H 9580 3877 50  0000 C CNN
+F 2 "" H 9575 4050 50  0001 C CNN
+F 3 "" H 9575 4050 50  0001 C CNN
+	1    9575 4050
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:R R1
+U 1 1 5DA77154
+P 5750 2375
+F 0 "R1" V 5543 2375 50  0000 C CNN
+F 1 "0" V 5634 2375 50  0000 C CNN
+F 2 "Resistor_SMD:R_0603_1608Metric" V 5680 2375 50  0001 C CNN
+F 3 "~" H 5750 2375 50  0001 C CNN
+	1    5750 2375
+	0    1    1    0   
+$EndComp
+$Comp
+L Device:R R2
+U 1 1 5DABC192
+P 9450 4900
+F 0 "R2" V 9550 4900 50  0000 C CNN
+F 1 "10k" V 9450 4900 50  0000 C CNN
+F 2 "Resistor_SMD:R_0603_1608Metric" V 9380 4900 50  0001 C CNN
+F 3 "~" H 9450 4900 50  0001 C CNN
+	1    9450 4900
+	0    -1   -1   0   
+$EndComp
+$Comp
+L Device:C_Small C2
+U 1 1 5DA7C173
+P 5500 2575
+F 0 "C2" H 5592 2621 50  0000 L CNN
+F 1 "100nF" H 5592 2530 50  0000 L CNN
+F 2 "Capacitor_SMD:C_0603_1608Metric" H 5500 2575 50  0001 C CNN
+F 3 "~" H 5500 2575 50  0001 C CNN
+	1    5500 2575
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:C_Small C3
+U 1 1 5DA7D9D5
+P 6000 2575
+F 0 "C3" H 6092 2621 50  0000 L CNN
+F 1 "100nF" H 6092 2530 50  0000 L CNN
+F 2 "Capacitor_SMD:C_0603_1608Metric" H 6000 2575 50  0001 C CNN
+F 3 "~" H 6000 2575 50  0001 C CNN
+	1    6000 2575
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:C_Small C1
+U 1 1 5DABC162
+P 8800 5550
+F 0 "C1" V 8700 5700 50  0000 C CNN
+F 1 "100nF" V 8900 5650 50  0000 C CNN
+F 2 "Capacitor_SMD:C_0603_1608Metric" H 8800 5550 50  0001 C CNN
+F 3 "~" H 8800 5550 50  0001 C CNN
+	1    8800 5550
+	0    1    1    0   
+$EndComp
+$Comp
+L Switch:SW_Push SW1
+U 1 1 5DABC173
+P 8800 5250
+F 0 "SW1" H 8950 5350 50  0000 C CNN
+F 1 "SW_Push" H 8850 5150 50  0000 C CNN
+F 2 "Button_Switch_SMD:SW_SPST_FSMSM" H 8800 5450 50  0001 C CNN
+F 3 "~" H 8800 5450 50  0001 C CNN
+	1    8800 5250
+	1    0    0    -1  
+$EndComp
+$Comp
+L DLY_Customized:1865 J1
+U 1 1 5DA16505
+P 6425 2375
+F 0 "J1" H 6655 2375 50  0000 L CNN
+F 1 "1865" H 6625 2075 50  0001 L BNN
+F 2 "LTD_Customized:SMA_Antenna" H 6225 2725 50  0001 L BNN
+F 3 "Bad" H 6675 2175 50  0001 L BNN
+F 4 "SMA Connector" H 6675 2625 50  0001 L BNN "Field4"
+	1    6425 2375
+	1    0    0    -1  
+$EndComp
+$Comp
+L Connector_Generic:Conn_01x22 J2
+U 1 1 5DABC1FA
+P 9050 2800
+F 0 "J2" H 8880 4042 50  0000 L CNN
+F 1 "Left_Conn" H 8880 3951 50  0000 L CNN
+F 2 "Connector_PinHeader_1.27mm:PinHeader_1x22_P1.27mm_Vertical" H 9050 2800 50  0001 C CNN
+F 3 "~" H 9050 2800 50  0001 C CNN
+	1    9050 2800
+	1    0    0    -1  
+$EndComp
+$Comp
+L Connector_Generic:Conn_01x22 J3
+U 1 1 5DABC1A3
+P 10575 2800
+F 0 "J3" H 10493 4017 50  0000 C CNN
+F 1 "Right_Conn" H 10493 3926 50  0000 C CNN
+F 2 "Connector_PinHeader_1.27mm:PinHeader_1x22_P1.27mm_Vertical" H 10575 2800 50  0001 C CNN
+F 3 "~" H 10575 2800 50  0001 C CNN
+	1    10575 2800
+	1    0    0    -1  
+$EndComp
+$Comp
+L bc95_bc35_module_board-rescue:BC95-dly_customized U1
+U 1 1 5DADF7C8
+P 3150 1975
+F 0 "U1" H 3225 386 50  0000 C CNN
+F 1 "BC95" H 3225 295 50  0000 C CNN
+F 2 "LTD_Customized:Quectel_BC95_BC35" H 4350 675 50  0001 C CNN
+F 3 "" H 4350 675 50  0001 C CNN
+	1    3150 1975
+	1    0    0    -1  
+$EndComp
+$EndSCHEMATC

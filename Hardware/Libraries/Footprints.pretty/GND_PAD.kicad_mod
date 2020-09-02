@@ -1,0 +1,10 @@
+(module "GND_PAD" (layer F.Cu) (tedit 5AAAC825)
+  (fp_text reference "T**" (at 0.3 1.7) (layer F.SilkS) hide
+    (effects (font (size 1 1) (thickness 0.15)))
+  )
+  (fp_text value "GND_PAD" (at 0.45 -2.3) (layer F.Fab) hide
+    (effects (font (size 1 1) (thickness 0.15)))
+  )
+  (pad "1" thru_hole circle (at 0 0) (size 0.6 0.6) (drill 0.4) (layers *.Cu)
+    (zone_connect 2) (tstamp dbe419c3-2b26-43c8-ba5d-2c29f85faf52))
+)

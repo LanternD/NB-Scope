@@ -1,0 +1,17 @@
+(module "USAKRO UK-B0273-SP25Y" (layer F.Cu) (tedit 5ED5CA9D)
+  (fp_text reference "REF**" (at 0 0.5 unlocked) (layer F.SilkS) hide
+    (effects (font (size 1 1) (thickness 0.15)))
+  )
+  (fp_text value "USAKRO UK-B0273-SP25Y" (at 0 -5.08 unlocked) (layer F.Fab)
+    (effects (font (size 1 1) (thickness 0.15)))
+  )
+  (fp_line (start -1.95 1.45) (end 1.95 1.45) (layer F.SilkS) (width 0.12))
+  (fp_line (start 1.95 -1.45) (end -1.95 -1.45) (layer F.SilkS) (width 0.12))
+  (pad "2" smd rect (at 2.175 0) (size 1.15 1.7) (layers "F.Cu" "F.Paste" "F.Mask") (tstamp 9b584d7c-f4fd-4f17-abb9-a542b6104eb3))
+  (pad "1" smd rect (at -2.175 0) (size 1.15 1.7) (layers "F.Cu" "F.Paste" "F.Mask") (tstamp 0ba0ce84-195c-4bc2-bec6-b2b0dc802df0))
+  (model "${KISYS3DMOD}/Button_Switch_SMD.3dshapes/SW_SPST_B3U-1000P.wrl"
+    (at (xyz 0 0 0))
+    (scale (xyz 1 1 1))
+    (rotate (xyz 0 0 0))
+  )
+)

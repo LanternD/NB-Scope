@@ -1,0 +1,14 @@
+(module "Mini_PCI-E_Socket_Latch" (layer F.Cu) (tedit 5BA3EEED)
+  (fp_text reference "J5" (at 2.25 -0.25) (layer F.SilkS) hide
+    (effects (font (size 1 1) (thickness 0.15)))
+  )
+  (fp_text value "Mini_PCI-E_Socket" (at 11.6 5.95) (layer F.Fab) hide
+    (effects (font (size 1 1) (thickness 0.15)))
+  )
+  (pad "3" smd rect (at 24.2 3.15 180) (size 4.8 3) (layers "F.Cu" "F.Paste" "F.Mask") (tstamp 1002638e-f99b-40e9-b2aa-d07ad7b60809))
+  (pad "3" smd rect (at 24.2 -3.15 180) (size 4.8 3) (layers "F.Cu" "F.Paste" "F.Mask") (tstamp 0da732f6-6f04-4ba6-aaf1-6f1a12b8864d))
+  (pad "3" smd rect (at 0 -3.15 180) (size 4.8 3) (layers "F.Cu" "F.Paste" "F.Mask") (tstamp c1dc0f2f-130e-483e-833b-1f609d8e7006))
+  (pad "3" smd rect (at 0 3.15 180) (size 4.8 3) (layers "F.Cu" "F.Paste" "F.Mask") (tstamp f2d8e933-cc1c-4fe6-b404-9ad6894a53cb))
+  (pad "2" thru_hole circle (at 24.2 0 180) (size 1.7 1.7) (drill 1.6) (layers *.Cu *.Mask) (tstamp f1d74909-5aaf-455d-a54f-7099d6f9afde))
+  (pad "1" thru_hole circle (at 0 0 180) (size 1.7 1.7) (drill 1.6) (layers *.Cu *.Mask) (tstamp 5ab88077-8ae4-45ab-8fbc-0bf678b897f2))
+)
