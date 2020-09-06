@@ -30,13 +30,24 @@ The module PCB project names should be straight-forward in the "Shieldboards" fo
 
 - Current sensing calibration board
 - Firmware upgrade extension board
-- moulde benchmark extension board
+- Moulde benchmark extension board
 - PWR_KEY addon
 
-## EDA Environment
+## General Guideline
 
-The software to open the projects is [KiCad](https://kicad-pcb.org/). 
+### EDA environment
+
+The software to open the projects is [KiCad](https://kicad-pcb.org/) (Pronounced as "key-cad").
 
 PLEASE use the **Nightly-build** version of KiCad because the projects are created by that. The projects are not backward compatible.
 
-## To be added later
+To open the 3D viewer, click "View->3D Viewer" (<kbd>⌥+3</kbd> on Mac or <kbd>Alt+3</kbd> on other operating systems) in the `Pcbnew` software menu.
+
+### Project structure
+
+- `<project_name>.pro`: project main file.
+- `<project_name>.sch` or `<project_name>.kicad_sch`: project schematic design.
+- `<project_name>.kicad_pcb`: project PCB design.
+- `Exported Files` folder: exported/generated files from the projects, including Gerber files, bill of materials (BOM), positioning files (for SMT process), and other board 3D photos or documents. I suggest you double check the project schematic and pcb designs, then generate these fabrication files again by yourself, instead of sending the Gerber files to manufacturers directly.
+
+## Click into their corresponding folders for more details
