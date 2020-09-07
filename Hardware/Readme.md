@@ -33,6 +33,10 @@ The module PCB project names should be straight-forward in the "Shieldboards" fo
 - Moulde benchmark extension board
 - PWR_KEY addon
 
+### Libraries
+
+If you encounter missing symbol/footprint problem when opening the schematic or PCB files, please import them in the `Libraries` folder. The missing libraries should be a subset of the available footprints.
+
 ## General Guideline
 
 ### EDA environment
@@ -50,4 +54,16 @@ To open the 3D viewer, click "View->3D Viewer" (<kbd>⌥+3</kbd> on Mac or <kbd>
 - `<project_name>.kicad_pcb`: project PCB design.
 - `Exported Files` folder: exported/generated files from the projects, including Gerber files, bill of materials (BOM), positioning files (for SMT process), and other board 3D photos or documents. I suggest you double check the project schematic and pcb designs, then generate these fabrication files again by yourself, instead of sending the Gerber files to manufacturers directly.
 
+There are some KiCad generated backup or middle files. I forget to remove them before committing. You may ignore or edit them. They have the following patterns:
+
+- `fp-info-cache`
+- `<project name>-cache.lib`
+- `<project name>-rescue.dcm`
+- `<project name>-rescue.lib`
+- `<project name>.kicad_pcb-bak`
+- `<project name>.sch-bak`
+- `sys-lib-table`
+
 ## Click into their corresponding folders for more details
+
+If you have any questions, please send me an email to "yangdeli at msu.edu".
