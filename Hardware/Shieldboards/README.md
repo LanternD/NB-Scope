@@ -3,18 +3,22 @@
 - The majority of the modules here can be soldered by hand, except Quectel BG96 and uBlox SARA-R410M-02B.
   - If you solder the SARA-R410M-02B **by yourself** (customizing the stencil and applying the solder paste), instead of using the SMT service, you need to shrink the size of all the pads of the SARA-R410M-02B footprint! Otherwise they are likely to get short-circuited.
   - Before
+  
   ![SARA footprint before](../../../assets/sara_pad_size_before.png)
   - After
+  
   ![SARA footprint after](../../../assets/sara_pad_size_after.png)
   
 - All the shieldboards have a RESET button for the module.
-- This a design compatibility issue in those modules with a "PWR_KEY" pin, including SARA-R410M-02B, BG96, BC26, and BC66. The pin requires an open collector transistor to enable, which I use different hardware designs to take care of it across different version of the board. Here is the summary:
+- There is a design compatibility issue in those modules with a "PWR_KEY" pin, including SARA-R410M-02B, BG96, BC26, and BC66. The pin requires an open collector transistor to enable, which I use different hardware designs to take care of it across different version of the board. Here is the summary:
   - Node mainboard v3.2 + BC26/BC66/SARA shieldboard: no modification needed.
-  - Node mainboard v3.2 + SARA shieldboard: use GPIO_L4 as the `PWRKEY` control pin.
-  - Node mainboard v3.1 + BC26/BC66/BG96 shieldboard: need to fixed by the `pwr_key_addon` in "Auxilliary Boards" folder. (**Highly unrecommended**)
-  - Node mainboard v3.1 + SARA shieldboard: use GPIO_L4 as the `PWRKEY` control pin. (**Highly unrecommended**)
+  - Node mainboard v3.2 + SARA shieldboard: use GPIO_L4 as the `PWRKEY` control pin. The software code can handle this.
+  - Node mainboard v3.1 + BC26/BC66/BG96 shieldboard: need to fixed by the `pwr_key_addon` in "Auxilliary Boards" folder (**Not recommended**).
+  - Node mainboard v3.1 + SARA shieldboard: use GPIO_L4 as the `PWRKEY` control pin (**Not recommended**).
 
 # Photos
+
+Note: the pin headers in the photos face up, but in reality they should be soldered on the other side of the board, facing down, such that the shieldboard can be docked to the mainboard.
 
 ## Quectel BC26 (BC66) Shieldboard
 

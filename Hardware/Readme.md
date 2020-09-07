@@ -50,7 +50,7 @@ To open the 3D viewer, click "View->3D Viewer" (<kbd>⌥+3</kbd> on Mac or <kbd>
 ### Project structure
 
 - `<project_name>.pro`: project main file.
-- `<project_name>.sch` or `<project_name>.kicad_sch`: project schematic design.
+- `<project_name>.sch` or `<project_name>.kicad_sch`: project schematic design. If `.sch` and `.kicad_sch` co-exist, use the `.kicad_sch` one.
 - `<project_name>.kicad_pcb`: project PCB design.
 - `Exported Files` folder: exported/generated files from the projects, including Gerber files, bill of materials (BOM), positioning files (for SMT process), and other board 3D photos or documents. I suggest you double check the project schematic and pcb designs, then generate these fabrication files again by yourself, instead of sending the Gerber files to manufacturers directly.
 
