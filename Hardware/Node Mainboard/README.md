@@ -45,6 +45,8 @@ The module ground GNDs are aggregated to 4 pins on the `Right_conn`, which passe
 
 **Note**: Ver 3.1 and 3.0 have other minor issues, which were largely fixed in Ver 3.2. Please see the "Change Log" below. To save your time, do not use Ver 3.0 and 3.1.
 
+- The "Module USB" can use as the 5V input of the board, while the "MCU USB" cannot do it. If you want to use the latter one to power the board, connect the "+5V" near it to the "+5V" near the "PWR SELECT" pin header.
+
 # Suggestions in Mainboard Hardware Design
 
 The latest version (ver 3.2) of mainboard generally works well, but I have several important suggestions for future design. 
