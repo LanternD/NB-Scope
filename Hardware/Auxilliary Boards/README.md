@@ -51,11 +51,11 @@ Note: you need to calibrate EVERY mainboard.
 
 # Firmware Upgrade Extension Board
 
-This is the presessor of "Module Benchmark Extension Board". Generally you can ignore this one.
+This is the predecessor of "Module Benchmark Extension Board". Generally you can ignore this one.
 
 # Module Benchmark Extension Board
 
-It docks the shieldboard for the "real-time benchmark mode" of NB-Scope. It can be used to upgrade the NB-IoT module firmware as well. Basically it pinouts all the necessary connectivity of the UE module, such that we can connect them to other peripherals, such as power monitor and UART. 
+An upgraded version of "Firmware Upgrade Extension Board". It docks the shieldboard for the "real-time benchmark mode" of NB-Scope. It can be used to upgrade the NB-IoT module firmware as well. Basically it pinouts all the necessary connectivity of the UE module, such that we can connect them to other peripherals, such as power monitor and UART. 
 
 The two pin headers are compatible with the mainboard.
 
