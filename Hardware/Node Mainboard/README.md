@@ -10,7 +10,7 @@ Major components on the board:
 - CAT24C128 as non-volatile memory
 - TXB0108 as logic level converter (3.3v <-> 1.8v)
 - Si7021 as temperature and relative humidity sensor
-- INA219 as current sensor
+- INA226 as current sensor
 
 It is powered by one or two 18650 batteries. It also supports USB 5V as the input voltage, using jumper cap to switch.
 
