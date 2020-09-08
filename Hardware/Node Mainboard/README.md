@@ -22,16 +22,46 @@ If you use the generic ST-Link V2 dongle as programmer, do not use it to power t
 
 # Suggestions in Mainboard Hardware Design
 
-The latest version of mainboard generally works well, but I have several important suggestions for future design. 
+The latest version (ver 3.2) of mainboard generally works well, but I have several important suggestions for future design. 
 
 1. Upgrade the power chip. LM3671 supports a maximum current of 600 mA, which sometimes has little margin for some NB-IoT modules. So I suggest using other power IC, such as LM3281 or TPS62160.
-2. 
+2. The STM32F103 does not have DMA channel for SD card writing, which means you cannot do anything else when writing the SD card. My suggestion is using another STM32 chip. You need to double check in STM32 CubeMX whether the chip supports DMA channel in SDIO interface.
+
+# NB-IoT UE Pin Assignment
+
+The pin assignment should be taken care for future module shieldboard design.
+
+![Module Pin Assignment](../../assets/module_board_pin_assignment.png)
+
+Note: the labels starting with `M_` means the pins are treated as part of the module. For example, `M_MAIN_UART_TX` means the UART Tx of the module, which should be connected to the MCU UART Rx pin accordingly.
+
+`Left_Conn` means the upper row in the picture below, `Right_conn` is the bottom row accordingly.
+
+The module ground GNDs are aggregated to 4 pins on the `Right_conn`, which passes through a current sampling resistor on the mainboard.
+
+# Gallery
+
+## Ver 3.2
+
+![Node Mainboard v3.2](../../assets/node_base_v3.2.png)
+![Node Mainboard v3.2](../../assets/node_base_v3.2_B.png)
+
+## Ver 3.0
+
+![Node Mainboard v3.0](../../assets/node_base_v3.0.png)
+![Node Mainboard v3.0](../../assets/node_base_v3.0_B.png)
 
 # Change log
 
 ## Ver 3.2
 
+- Add a DTC143Z to control the PWRKEY pin for uBlox SARA-R410M-02B and Quectel BG96, BC26, and BC66, such that we don't need the `pwr_key_add_on` modification board for these modules.
+- Replace the labels in schematic by another type (with an enclosure), which shows the direction of the signal.
 
-# Gallery
+## Ver 3.1
 
-## Ver 3.2
+Update the power module. Replace the large inductor to a smaller one. The power module layout is also improved.
+
+## Ver 3.0
+
+Actually the first version of NB-Scope mainboard.
