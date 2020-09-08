@@ -24,24 +24,28 @@ Steps:
 4. Read and record the INA226 output via the USB UART. The board will output the current register reading once per second.
 5. Repeat the above steps for resistors from 13.3 Ohm to 165 Ohm. The 11 Ohm is not recommended. Do not try the 5.6 Ohm.
 6. Calculation as follows:
-  1. Multiply the register value by 0.018311 to get the current reading of INA226. (Note: if the output is already the current value, you don't need to do this. Depends of the output of the embedded program.)
+  
+  1. Multiply the register value by 0.018311 to get the current reading of INA226. (Note: if the output is already the current value, you don't need to do this conversion, depending on the output of the embedded program.)
   2. Divide the INA226 current by the meter reading current to get a ratio.
-  3. Multiply the ratio with 2778 (preset INA226 calibration register value) to get the new calibration register value. Average all the calibration values to get the final calibration value.
+  3. Multiply the ratio with 2778 (the preset INA226 calibration register value) to get the new calibration register value. 
+  4. Average all the calibration values to get the final calibration value.
   
 Here is a table showing the measurement and calculation example for one of our board.
 
-| Resistance | Meter reading | INA226 register output | INA226 current reading | New calibration value |
-|------------|---------------|------------------------|------------------------|-----------------------|
-|         20 |         19.24 |                   1061 |              19.427971 |              2751.122 |
-|       48.5 |          44.4 |                   2444 |              44.752084 |              2756.144 |
-|        100 |          83.1 |                   4578 |              83.827758 |              2753.883 |
-|        150 |         114.9 |                   6333 |                115.964 |              2752.521 |
-|        200 |         141.9 |                   7823 |                143.247 |              2751.878 |
-|        248 |         164.2 |                   9048 |                165.678 |              2753.219 |
+| Resistance | Meter reading (mA) | INA226 register reading | Calculated INA226 current (mA) | New calibration value |
+|------------|--------------------|-------------------------|--------------------------------|-----------------------|
+|         20 |              19.24 |                    1061 |                      19.427971 |              2751.122 |
+|       48.5 |               44.4 |                    2444 |                      44.752084 |              2756.144 |
+|        100 |               83.1 |                    4578 |                      83.827758 |              2753.883 |
+|        150 |              114.9 |                    6333 |                        115.964 |              2752.521 |
+|        200 |              141.9 |                    7823 |                        143.247 |              2751.878 |
+|        248 |              164.2 |                    9048 |                        165.678 |              2753.219 |
 
 The final calibration value is the average of the last column, resulting in 2753.
 
 The value you get should not be too far from these value above. The final calibration value is around 2700 - 2900. For the same batch of boards, the standard deviation is less than 50. If you use a different batch of current sensing resistor, the value can deviate up to 150. 
+
+**The new current calibration value should be written into the onboard EEPROM before node deployment.**
 
 Note: you need to calibrate EVERY mainboard.
 
