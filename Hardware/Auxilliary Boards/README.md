@@ -32,16 +32,16 @@ Steps:
   
 Here is a table showing the measurement and calculation example for one of our board.
 
-| Resistance | Meter reading (mA) | INA226 register reading | Calculated INA226 current (mA) | New calibration value |
-|------------|--------------------|-------------------------|--------------------------------|-----------------------|
-|         20 |              19.24 |                    1061 |                      19.427971 |              2751.122 |
-|       48.5 |               44.4 |                    2444 |                      44.752084 |              2756.144 |
-|        100 |               83.1 |                    4578 |                      83.827758 |              2753.883 |
-|        150 |              114.9 |                    6333 |                        115.964 |              2752.521 |
-|        200 |              141.9 |                    7823 |                        143.247 |              2751.878 |
-|        248 |              164.2 |                    9048 |                        165.678 |              2753.219 |
+| Expected current (mA) | Meter reading (mA) | INA226 register reading | Calculated INA226 current (mA) | New calibration value |
+|-----------------------|--------------------|-------------------------|--------------------------------|-----------------------|
+|                    20 |               20.0 |                    1089 |                      19.940679 |              2786.264 |
+|                  48.5 |               49.0 |                    2659 |                      48.688949 |              2795.747 |
+|                   100 |               99.5 |                    5484 |                     100.417524 |              2752.517 |
+|                   150 |              149.0 |                    8235 |                     150.791085 |              2745.003 |
+|                   200 |              198.0 |                   10974 |                     200.944914 |              2737.287 |
+|                   248 |                244 |                   13487 |                     246.960457 |              2744.699 |
 
-The final calibration value is the average of the last column, resulting in 2753.
+The final calibration value is the average of the last column, resulting in 2760.
 
 The value you get should not be too far from these value above. The final calibration value is around 2700 - 2900. For the same batch of boards, the standard deviation is less than 50. If you use a different batch of current sensing resistor, the value can deviate up to 150. 
 
