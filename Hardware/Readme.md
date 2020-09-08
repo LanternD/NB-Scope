@@ -37,9 +37,11 @@ The module PCB project names should be straight-forward in the "Shieldboards" fo
 
 If you encounter missing symbol/footprint problem when opening the schematic or PCB files, please import them in the `Libraries` folder. The missing libraries should be a subset of the available footprints.
 
-## General Guideline
+### Materials
 
-### EDA environment
+I put the related documents related to hardware design here, including NB-IoT module summary and various datasheets.
+
+## EDA environment
 
 The software to open the projects is [KiCad](https://kicad-pcb.org/) (Pronounced as "key-cad").
 
@@ -47,12 +49,16 @@ PLEASE use the **Nightly-build** version of KiCad because the projects are creat
 
 To open the 3D viewer, click "View->3D Viewer" (<kbd>⌥+3</kbd> on Mac or <kbd>Alt+3</kbd> on other operating systems) in the `Pcbnew` software menu.
 
-### Project structure
+If you use the latest version of KiCad to open `.sch` files, `Eeschema`, the software component to edit schematic, will ask you to convert the `.sch` into `.kicad_sch`. Just go ahead and follow the instruction in KiCad.
+
+You can generate all the files for fabrication in `Pcbnew` software module in KiCad.
+
+## Project structure
 
 - `<project_name>.pro`: project main file.
 - `<project_name>.sch` or `<project_name>.kicad_sch`: project schematic design. If `.sch` and `.kicad_sch` co-exist, use the `.kicad_sch` one.
 - `<project_name>.kicad_pcb`: project PCB design.
-- `Exported Files` folder: exported/generated files from the projects, including Gerber files, bill of materials (BOM), positioning files (for SMT process), and other board 3D photos or documents. I suggest you double check the project schematic and pcb designs, then generate these fabrication files again by yourself, instead of sending the Gerber files to manufacturers directly.
+- `Exported Files` folder: exported/generated files from the projects, including Gerber files, bill of materials (BOM), positioning files (for SMT process), and other board 3D views or documents. I suggest you double check the project schematic and pcb designs, then generate these fabrication files again by yourself, instead of sending the Gerber files to manufacturers directly.
 
 There are some KiCad generated backup or middle files. I forget to remove them before committing. You may ignore or edit them. They have the following patterns:
 
