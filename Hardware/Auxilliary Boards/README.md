@@ -14,7 +14,9 @@ You need a series of resistors for this board. The actual resistance does not ma
 
 Solder the 1.27 mm pitch headers according to the image above. Then follow the instruction to test the output.
 
-Before calibration, make sure the embedded code runs the "current sensing demo" (`void run_demo8_i_bus_sensing()` in `Software/field-test-control/Src/fm_demo.c`). Check the `main.c` as well.
+Before calibration, make sure the embedded code runs the "current sensing demo" (`void run_demo8_i_bus_sensing()` in `Software/field-test-control/Src/fm_demo.c`). Check the `main.c` as well. 
+
+The mainboard should be connected to the PC via USB, then the PC should open a serial console to read the data from the board.
 
 Steps:
 
@@ -49,10 +51,6 @@ The value you get should not be too far from these value above. The final calibr
 
 Note: you need to calibrate EVERY mainboard.
 
-# Firmware Upgrade Extension Board
-
-This is the predecessor of "Module Benchmark Extension Board". Generally you can ignore this one.
-
 # Module Benchmark Extension Board
 
 An upgraded version of "Firmware Upgrade Extension Board". It docks the shieldboard for the "real-time benchmark mode" of NB-Scope. It can be used to upgrade the NB-IoT module firmware as well. Basically it pinouts all the necessary connectivity of the UE module, such that we can connect them to other peripherals, such as power monitor and UART. 
@@ -60,6 +58,10 @@ An upgraded version of "Firmware Upgrade Extension Board". It docks the shieldbo
 The two pin headers are compatible with the mainboard.
 
 The "EXT3V3" is used to connect to the power monitor. For example, the RED terminal of the monitor is connected to the EXT3V3, and the BLACK terminal is connected to the 3V3, repectively. "EXTGND" is likewise.
+
+# Firmware Upgrade Extension Board
+
+This is the predecessor of "Module Benchmark Extension Board". Generally you can ignore this one.
 
 # PWRKEY Addon
 
