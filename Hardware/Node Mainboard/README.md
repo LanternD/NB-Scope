@@ -31,7 +31,7 @@ The latest version (ver 3.2) of mainboard generally works well, but I have sever
 
 The pin assignment should be taken care for future module shieldboard design.
 
-![Module Pin Assignment](../../assets/module_board_pin_assignment.png)
+![Module Pin Assignment](../../../assets/module_board_pin_assignment.png)
 
 Note: the labels starting with `M_` means the pins are treated as part of the module. For example, `M_MAIN_UART_TX` means the UART Tx of the module, which should be connected to the MCU UART Rx pin accordingly.
 
@@ -43,13 +43,13 @@ The module ground GNDs are aggregated to 4 pins on the `Right_conn`, which passe
 
 ## Ver 3.2
 
-![Node Mainboard v3.2](../../assets/node_base_v3.2.png)
-![Node Mainboard v3.2](../../assets/node_base_v3.2_B.png)
+![Node Mainboard v3.2](../../../assets/node_base_v3.2.png)
+![Node Mainboard v3.2](../../../assets/node_base_v3.2_B.png)
 
 ## Ver 3.0
 
-![Node Mainboard v3.0](../../assets/node_base_v3.0.png)
-![Node Mainboard v3.0](../../assets/node_base_v3.0_B.png)
+![Node Mainboard v3.0](../../../assets/node_base_v3.0.png)
+![Node Mainboard v3.0](../../../assets/node_base_v3.0_B.png)
 
 # Change log
 
