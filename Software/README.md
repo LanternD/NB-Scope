@@ -26,11 +26,11 @@ There are many components in this code. I could not explain all the details in i
 
 # Server-side Logging
 
-In "udp"
+In "udp-server-for-nb-iot" folder.
 
 # Data Processing
 
-In the "data-analyzer" folder.
+In the "data-analyzer" folder. (To be added)
 
 
 
