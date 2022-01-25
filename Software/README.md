@@ -8,7 +8,7 @@ This folder stores the software codes of the NB-Scope project. There are 3 major
 
 Note that the codebase is developed by different members of our group, so the code style may vary across different components.
 
-**Note: The code are still being organized, which may be incomplete by the time you visit here.**
+**Most of the code is uploaded. Generally, the content in this `Software` folder will not be updated in the future, unless there is major components missing.**
 
 # Embedded Code
 
@@ -30,7 +30,7 @@ In "udp-server-for-nb-iot" folder.
 
 # Data Processing
 
-In the "data-analyzer" folder. (To be added)
+In the "deplotment-data-analyzer" folder.
 
 
 

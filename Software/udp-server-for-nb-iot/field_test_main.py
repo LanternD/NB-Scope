@@ -26,10 +26,7 @@ HTTP_PORT = 9456
 local_timezone = "America/Detroit"
 udp_sock = ""  # udp socket
 
-Operator_dic = {
-    "SECRET_2": "002",
-    "SECRET_1": "001",
-}  # We omit this to be consistent with the paper.
+Operator_dic = {"China Telecom": "002", "China Mobile": "001"}
 App_Type_dic = {
     "Water Meter": "001",
     "Basement": "002",
@@ -42,16 +39,16 @@ App_Type_dic = {
     "Else": "009",
 }
 
-# Update this part
+# 修改这里的东西
 #####
-app_type_g = "001"  # must be 3 digits.
+app_type_g = "001"  # 必须是3位
 sleep_timer_g = "00005"
 ul_total_pack_g = "030"
 test_id_g = "01"
 ul_pack_size_g = "0256"
 ####
 
-operator_dict_dy = {"001": "SECRET_1", "002": "SECRET_2", "003": "SECRET_3"}
+operator_dict_dy = {"001": "China Mobile", "002": "China Telecom", "003": "Verizon"}
 
 ue_type_dict_dy = {
     "000": "Undefined",
@@ -552,8 +549,8 @@ def parse_http(data, addr):
                 send_down_http(Init_msg)
                 print("Sended Init Message\n")
         elif 1 <= int(Pack_items["Pack_index"]) <= 999:
-            if int(Pack_items["Pack_index"]) == 1:  # First packet
-                if Pack_items["UE_ID"] not in UE_ID_List:  # New node
+            if int(Pack_items["Pack_index"]) == 1:  # 首次发包
+                if Pack_items["UE_ID"] not in UE_ID_List:  # 全新的节点
                     log_file_path = (
                         log_file_path_g
                         + "{0}_{1}_T_{2}_App_{3}_UE_{4}_Op_{5}{6}".format(
@@ -566,7 +563,7 @@ def parse_http(data, addr):
                             ".csv",
                         )
                     )
-                    UE_ID_List.append(Pack_items["UE_ID"])  # Add UE_ID to the list
+                    UE_ID_List.append(Pack_items["UE_ID"])  # UE_ID加入列表中
                     Log_File_List.append(log_file_path)
                 else:
                     i = 0
@@ -584,7 +581,7 @@ def parse_http(data, addr):
                                     ".csv",
                                 )
                             )
-                            Log_File_List[i] = log_file_path  # Update log file name
+                            Log_File_List[i] = log_file_path  # 更新log文件名
                             break
                         i += 1
                 flag = 1
@@ -601,7 +598,7 @@ def parse_http(data, addr):
                         flag = 1
             if flag == 1:
                 flag = 0
-                for item in Log_File_List:  # Match UE_ID by log filename
+                for item in Log_File_List:  # 根据UE_ID匹配log_file(文件名)
                     if item.find(Pack_items["UE_ID"]) != -1:
                         log_file_path = item
                         break
@@ -733,7 +730,7 @@ def parse_udp(data, addr):
         Init_msg = Make_init_msg(Pack_items)
         if Init_msg != None:
             send_down_udp(Init_msg, addr)
-        if Pack_items["UE_ID"] not in UE_ID_List:  # Existing node
+        if Pack_items["UE_ID"] not in UE_ID_List:  # 全新的节点
             log_file_path = (
                 log_file_path_g
                 + "{0}_{1}_T_{2}_App_{3}_UE_{4}_Op_{5}{6}".format(
@@ -746,7 +743,7 @@ def parse_udp(data, addr):
                     ".csv",
                 )
             )
-            UE_ID_List.append(Pack_items["UE_ID"])
+            UE_ID_List.append(Pack_items["UE_ID"])  # UE_ID加入列表中
             Log_File_List.append(log_file_path)
             Test_id_list.append(Pack_items["Test_ID"])
             Pack_index_list.append(Pack_items["Pack_index"])
@@ -754,7 +751,7 @@ def parse_udp(data, addr):
                 datetime.now(pytz.timezone(local_timezone)).strftime("%H:%M:%S")
             )
 
-        else:  # Existing node
+        else:  # 非全新节点
             log_file_path = (
                 log_file_path_g
                 + "{0}_{1}_T_{2}_App_{3}_UE_{4}_Op_{5}{6}".format(
@@ -770,7 +767,7 @@ def parse_udp(data, addr):
             i = 0
             for i in range(len(UE_ID_List)):
                 if UE_ID_List[i] == Pack_items["UE_ID"]:
-                    Log_File_List[i] = log_file_path  # Update log file name
+                    Log_File_List[i] = log_file_path  # 更新log文件名
                     Test_id_list[i] = Pack_items["Test_ID"]
                     Pack_index_list[i] = Pack_items["Pack_index"]
                     Pack_Time_list[i] = datetime.now(
@@ -790,8 +787,8 @@ def parse_udp(data, addr):
     elif 1 <= int(Pack_items["Pack_index"]) <= 999:
         for i in range(len(UE_ID_List)):
             if UE_ID_List[i] == Pack_items["UE_ID"]:
-                log_file_path = Log_File_List[i]
-                Pack_index_list[i] = Pack_items["Pack_index"]
+                log_file_path = Log_File_List[i]  # 获取log文件名
+                Pack_index_list[i] = Pack_items["Pack_index"]  # 更新Pack_index
                 # DY:
                 Pack_Time_list[i] = datetime.now(
                     pytz.timezone(local_timezone)
@@ -803,7 +800,7 @@ def parse_udp(data, addr):
             print("the UE_ID is fly 1-999")
             flag = 0
         if flag == 1:
-            # Storing and updating information
+            # 存储文件和显示信息
             log = [
                 Pack_items["UE_ID"],
                 Pack_items["Pack_index"],

@@ -1,3 +1,3 @@
-# UDP Server Code
+# udp-server-for-nb-iot
 
-This is for reference only, you may want to implement your own server side code.
+A program that interacts with the UDP data input from the UEs.

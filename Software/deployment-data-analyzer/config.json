@@ -1,0 +1,202 @@
+{
+    "env_prefix": {
+        "dy": {
+            "Darwin": "/Users/dlyang/Dropbox/Project/NB-IoT/NB-IoT Teamwork/",
+            "Windows": "C:/Users/dlyang-hmly/Dropbox/Project/NB-IoT/NB-IoT Teamwork/",
+            "Linux": "/home/dlyang/Dropbox/Project/NB-IoT/NB-IoT Teamwork/"
+        },
+        "dy2": {
+            "Linux": "/home/dlyang-zmly/Dropbox/Project/NB-IoT/NB-IoT Teamwork/"
+        },
+        "ls": {
+            "Windows": "D:/Nutstore/我的坚果云/"
+        },
+        "LiqianShen": {
+            "Windows": "D:/Nutstore/我的坚果云/"
+        },
+        "xh": {
+            "Windows": "D:/Nutstore/"
+        },
+        "hxx": {
+            "Windows": "C:/Users/hxx/Documents/我的坚果云/",
+            "Darwin": "/Users/huangxuan/.nutstore/.nutstore/Nutstore"
+        }
+    },
+    "middle_file_dir_by_host": {
+        "Zimalaya": "/home/dlyang-zmly/iliad/Middle/",
+        "msdy-tech": "/home/dlyang/Artemis/Middle/",
+        "DESKTOP-JQ98L8H": "D:/temp/Middle/",
+        "DYMBP-Baikal": "/Users/dlyang/Minkowski/Middle/",
+        "Himalaya": "E:/nb-iot-project-middle-files/"
+    },
+    "i_raw_folder_by_host": {
+        "cn": "Field Test/STM32 Node Deployment/",
+        "us": "Field Test/STM32 Node Deployment - US/Current/",
+        "sz": "Field Test/STM32 Node Deployment - SZ/Current/",
+        "opt": "Field Test/Amarisoft_SDR_Optimization/",
+        "dpow": "Field Test/Distance vs Power/"
+    },
+    "csv_folder_by_host": {
+        "Zimalaya": "/home/dlyang-zmly/iliad/",
+        "msdy-tech": "/home/dlyang/Artemis/",
+        "DESKTOP-JQ98L8H": "D:/temp/",
+        "DYMBP-Baikal": "/Users/dlyang/Minkowski/"
+    },
+    "csv_subfolder_by_region": {
+        "cn": "current_csv_cn/",
+        "us": "current_csv_us/",
+        "opt": "current_csv_opt/",
+        "sz": "current_csv_cn/",
+        "dpow": "current_csv_dpow/"
+    },
+    "data_path_prefix_cn":
+    "Field Test/STM32 Node Deployment/",
+    "data_path_prefix_us":
+    "Field Test/STM32 Node Deployment - US/",
+    "data_path_prefix_amarisoft":
+    "Field Test/Amarisoft_SDR_Optimization/",
+    "coverage_measurement_folder_prefix":
+    "Field Test/Cell Coverage Measurement/",
+            "messages_xml_path":
+            "Materials/Quectel_Related/BC35/Firmware/BC35GJCR01A02_ONT/messages.xml",
+    "output_path":
+    "Field Test/Deployment Experiment Output/",
+    "figure_output_path":
+    "Field Test/Deployment Experiment Output/figures/",
+    "show_warning_msg":
+    false,
+    "show_error_msg":
+    false,
+    "module_vcc":
+    3.300,
+    "decoding_log_file_name":
+    "decoded_pkl_log.md",
+    "node_id_to_module_dict": {
+        "A01": "BG96",
+        "A02": "SARA",
+        "A03": "BC66",
+        "A04": "BG96",
+        "A05": "SARA",
+        "A06": "BC66",
+        "C01": "ME3616",
+        "C02": "ME3616",
+        "C03": "ME3616",
+        "C04": "ME3616",
+        "C05": "BC28",
+        "C06": "BC28",
+        "C07": "BC28",
+        "C08": "BC28",
+        "C09": "BC26",
+        "C10": "BC26",
+        "C11": "BC26",
+        "C12": "BC26",
+        "D01": "BC26",
+        "D02": "BC26",
+        "D03": "BC28",
+        "D04": "BC28",
+        "D05": "ME3616",
+        "D06": "ME3616",
+        "D07": "BC26",
+        "D08": "BC26",
+        "D09": "BC28",
+        "D10": "BC28",
+        "D11": "ME3616",
+        "D12": "ME3616"
+    },
+    "module_code_to_name_dict": {
+        "9": "ME3616",
+        "1": "BC28",
+        "4": "BC26",
+        "7": "BG96",
+        "8": "SARA",
+        "5": "BC66"
+    },
+    "d_series_node_i_calibration": {
+        "D01": 2854,
+        "D02": 2723,
+        "D03": 2816,
+        "D04": 2855,
+        "D05": 2844,
+        "D06": 2837,
+        "D07": 2825,
+        "D08": 2877,
+        "D09": 2855,
+        "D10": 2839,
+        "D11": 2847,
+        "D12": 2837
+    },
+    "module_to_i_tx_th_dict": {
+        "BG96": 100,
+        "SARA": 99,
+        "BC66": 115,
+        "BC26": 80,
+        "BC28": 80,
+        "ME3616": 40
+    },
+    "module_to_i_idle_th_dict": {
+        "BG96": 28,
+        "SARA": 15,
+        "BC66": 5,
+        "BC26": 12,
+        "BC28": 12,
+        "ME3616": 13
+    },
+    "ecl0_i_tx_th_override_i_max_condition": {
+        "BC66": 110,
+        "BC26": 110,
+        "BC28": 70
+    },
+    "overriden_i_tx_th": {
+        "BC66": 42,
+        "BC28": 36
+    },
+    "data_folder_list_cn": [
+        "building-1/",
+        "building-south35/",
+        "building-library/",
+        "FuDi/",
+        "shopping mall/"
+    ],
+    "dbg_data_folder_list_amarisoft": [
+        "Inactivetimer/DBG/Timer=5s/",
+        "Inactivetimer/DBG/Timer=10s/",
+        "Inactivetimer/DBG/Timer=15s/",
+        "Inactivetimer/DBG/Timer=20s/"
+    ],
+    "current_data_folder_list_amarisoft": [
+        "Inactivetimer/Current/Timer=5s/",
+        "Inactivetimer/Current/Timer=10s/",
+        "Inactivetimer/Current/Timer=15s/",
+        "Inactivetimer/Current/Timer=20s/",
+        "Threshold/Current/-108/",
+        "Threshold/Current/-109/",
+        "Threshold/Current/-110/",
+        "Threshold/Current/-111/",
+        "Threshold/Current/-112/",
+        "Threshold/Current/-113/",
+        "Threshold/Current/-114/",
+        "Threshold/Current/-115/",
+        "Threshold/Current/-116/",
+        "Threshold/Current/-117/",
+        "Msg3_Rep/Current/Msg3_Rep=8/",
+        "Msg3_Rep/Current/Msg3_Rep=16/",
+        "Msg3_Rep/Current/Msg3_Rep=32/",
+        "Msg3_Rep/Current/Msg3_Rep=64/",
+        "Msg3_Rep/Current/Msg3_Rep=128/"
+    ],
+    "data_folder_list1": [
+        "STM32 SDIO/Lab_Test_1/", "STM32 SDIO/Lab_Test_2/",
+        "STM32 SDIO/实验楼1F_消防栓/", "STM32 SDIO/操场/", "STM32 SDIO/宿舍搂11F_消防栓/",
+        "STM32 SDIO/实验楼2F_消防栓/", "STM32 SDIO/宿舍36_6F消防栓/", "Beijing/酒店/",
+        "Beijing/北邮/", "Beijing/北京南站/", "Nanjing/复地-26-室内水表/",
+        "Nanjing/宿舍-11F-消防栓/", "Nanjing/新百-2F-消防通道/", "Nanjing/宿舍-6F-消防栓/",
+        "Nanjing/金达花园-28F-消防栓-移动/", "Nanjing/复地-26F-水表井/",
+        "Nanjing/新百-4F-消防通道/", "Nanjing/景枫-1F/", "Nanjing/1号楼-地下室1-消防栓/",
+        "Nanjing/宿舍-1F-消防栓/", "Nanjing/景枫-2F/", "Nanjing/1号楼-地下室2-消防栓/",
+        "Nanjing/操场/", "Nanjing/金达花园-4F-室内水表/", "Nanjing/福-6F-消防通道/",
+        "Nanjing/福-4F-消防通道/", "Nanjing/实验楼-1F-消防栓/", "Nanjing/计算机楼-车库口/",
+        "Nanjing/金达花园-18F-消防栓/", "Nanjing/实验室门口-消防栓/", "Nanjing/金达花园-4F-消防栓/",
+        "Nanjing/复地-12F-水表井/", "Nanjing/新华大厦-44F-消防栓/", "Nanjing/实验室-窗台/",
+        "Nanjing/复地-1F-水表井/"
+    ]
+}
